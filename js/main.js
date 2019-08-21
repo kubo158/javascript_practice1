@@ -2,35 +2,16 @@
 
 {
 
-
-let fizz = 0;
-let buzz = 0;
-
-//fizzの値
   for (let i = 1; i < 100; i++) {
-    let fizz = i * 3;
-    if (fizz > 100) {
-      break;
+    if (i % 15 === 0) {
+      console.log(`FizzBuzzの値：${i}`);
+    } else if (i % 3 === 0) {
+      console.log(`Fizzの値：${i}`);
+    } else if (i % 5 === 0) {
+      console.log(`Bizzの値：${i}`);
     }
-    console.log(`Fizzの値：${fizz}`);
   }
 
-//buzzの値
-    for (let j = 1; j < 100; j++) {
-      let buzz = j * 5;
-      if (buzz > 100) {
-        break;
-      }
-      console.log(`Buzzの値：${buzz}`);
-    }
 
-// ５と３の倍数
-  // if (value % 15 === 0) {
-  //   console.log(`FizzBuzz：${}`);
-  // } else {
-  //
-  // }
-
-
-//strictの終わり
+  //strictの終わり
 }
